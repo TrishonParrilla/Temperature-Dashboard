@@ -43,5 +43,6 @@ function conversionTable() {
         <td>${celsius}</td>
         <td>${fahrenheit}</td>
         </tr>`;
+        
     }
 }

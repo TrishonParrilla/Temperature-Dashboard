@@ -200,8 +200,8 @@ body{
     .thermometer-hot,
     .thermometer-hottest,
     .thermometer-mid {
-        height: 80px;
-        width: 20px;
+        height: 120px;
+        width: 35px;
     }
 }
 
