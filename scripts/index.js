@@ -29,7 +29,7 @@ function convertToCelsius() {
     userValue = document.getElementById("temp-converter-temp").value;
     userValue = (userValue - 32 ) * 5/9;
     conversionOutput = document.getElementById("convert-result");
-    conversionOutput.innerHTML=(`${userValue}`);
+    conversionOutput.innerHTML=(`${userValue.toFixed(2)}`);
     const thermometerStyle = document.getElementById("thermometer");
         thermometerStyle.classList.remove("thermometer-hot");
         thermometerStyle.classList.remove("thermometer-hottest");
@@ -55,6 +55,7 @@ function convertToCelsius() {
 
 function conversionTable() {
         let fahrenheitInsert = document.getElementById("conversionTable");
+        fahrenheitInsert.style.display = "block"
         if (fahrenheitInsert.innerHTML !== "") {
         fahrenheitInsert.innerHTML = "";
         return
@@ -75,4 +76,11 @@ function conversionTable() {
         </tr>`;
         
     }
+}
+
+function closeTable() {
+    console.log("Close Table Function");
+    const table = document.getElementById("conversionTable")
+    table.style.display = "none"
+    //table.style.display="table"
 }

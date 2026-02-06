@@ -23,7 +23,8 @@ body{
 }
 
 .title-temp-convert {
-    margin-bottom:2.5em;
+    margin-top:1em;
+    margin-bottom:.5em;
 }
 .temp-converter {
     display:flex;
@@ -70,8 +71,8 @@ body{
     padding:.9em;
     border:none;
     border-radius:5px;
-    background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
     text-align: center;
+    border:1px solid black;
 }
 
 #temp-converter-temp::placeholder{  /* ::placeholder changes the placeholder text inside the input box */
@@ -80,10 +81,7 @@ body{
     font-family:"SN Pro",sans-serif;
 }
 
-#temp-converter-temp:hover {
-    box-shadow: 3px 3px 10px black;
 
-}
 
 #convert-result {
     text-align:center;
